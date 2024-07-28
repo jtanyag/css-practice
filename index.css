@@ -1,0 +1,62 @@
+/* Provided CSS */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --body-bg: #1E1F25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+}
+/* End Provided CSS */
+
+.requirements {
+  max-width: 500px;
+  margin: 30px auto;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg);
+  height: 100vh;
+}
+.button-border {
+  background: linear-gradient(115deg, var(--grad-color1), var(--grad-color2), var(--grad-color3), var(--grad-color4), var(--grad-color5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.button-border:hover {
+  transform: scaleX(-1);
+}
+.button-border:hover .button {
+  color: var(--btn-color-hover);
+  transform: scaleX(-1);
+  padding: 25px 35px;
+}
+.button {
+  font-family: var(--font-family);
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border: none;
+  padding: 20px 30px;
+  letter-spacing: .1em;
+}
